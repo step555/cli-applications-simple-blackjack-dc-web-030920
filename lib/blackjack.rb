@@ -36,8 +36,7 @@ prompt_user
     elsif input == 's' then
       card_total
       else
-       invalid_command
-       prompt_user
+       invalid_command && prompt_user
     end
 end
 
