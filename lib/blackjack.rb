@@ -28,7 +28,7 @@ def initial_round
   card_total
 end
 
-def hit?(current_card_value)
+def hit?(card_total)
   prompt_user
   user_input = get_user_input
   while user_input != "h" && user_input != "s"
@@ -37,9 +37,9 @@ def hit?(current_card_value)
     user_input = get_user_input
   end
   if user_input == "h"
-    current_card_value += deal_card
+    card_total += deal_card
   end
-  return current_card_value
+  return card_total
 end
 
 def invalid_command
