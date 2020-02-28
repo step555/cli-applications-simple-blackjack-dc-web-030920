@@ -29,7 +29,7 @@ def initial_round
 end
 
 def hit?(card_total)
-prompt_user
+  prompt_user
    input = get_user_input #get the value from the user input
    if input == "s"
       card_total
